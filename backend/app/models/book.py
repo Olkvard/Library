@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, String
 from app.db.base import Base
 
 class Book(Base):
+    """SQLAlchemy model for books."""
     __tablename__ = "books"
 
     id = Column(Integer, primary_key=True, index=True)

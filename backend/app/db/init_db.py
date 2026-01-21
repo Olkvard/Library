@@ -3,6 +3,7 @@ from app.models import user, book, loan  # Import all models to register them wi
 from app.db.base import Base
 
 def init_db():
+    """Initialize the database by creating all tables."""
     print("Before create_all: ", Base.metadata.tables)
     Base.metadata.create_all(bind=engine)
     print("After create_all: ", Base.metadata.tables)

@@ -4,6 +4,7 @@ from datetime import datetime
 from app.db.base import Base
 
 class Loan(Base):
+    """SQLAlchemy model for book loans."""
     __tablename__ = "loans"
 
     id = Column(Integer, primary_key=True, index=True)
